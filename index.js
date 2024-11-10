@@ -30,6 +30,7 @@ db.query("SELECT *FROM capitals", (err, res) => {
   } else {
     quiz = res.rows;
   }
+  db.end();
 });
 
 let totalCorrect = 0;
